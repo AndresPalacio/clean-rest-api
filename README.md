@@ -69,3 +69,11 @@ com.example.service.user.architecture.*
 The tests develop were doing unit tests for each class of the project.
 
 Do integration test on the controller, which is our application entry point.
+
+
+
+https://jmgarridopaz.github.io/content/hexagonalarchitecture.html
+
+https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c
+
+https://www.linkedin.com/pulse/hexagonal-design-pattern-javed-iqbal/
