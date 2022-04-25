@@ -79,3 +79,5 @@ https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides
 https://www.linkedin.com/pulse/hexagonal-design-pattern-javed-iqbal/
 
 https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
+
+https://njkhanh.com/domain-driven-hexagon-architecture-for-javascript-typescript-developers-p5f34373037
