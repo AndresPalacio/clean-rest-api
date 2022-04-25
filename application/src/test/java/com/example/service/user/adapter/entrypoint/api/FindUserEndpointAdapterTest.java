@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -51,7 +52,7 @@ class FindUserEndpointAdapterTest {
 
     @Test
     public void shouldReturnEmpty_whenThereIsNoUserPersisted() {
-        Mockito.when(findAllUsersUseCase.fetchAllPersisted()).thenReturn(List.of());
+        Mockito.when(findAllUsersUseCase.fetchAllPersisted()).thenReturn(Arrays.asList());
 
         Collection<UserDto> userDtos = findUserEndpointAdapter.fetchAllUsers();
         assertThat(userDtos).isEmpty();
@@ -64,7 +65,7 @@ class FindUserEndpointAdapterTest {
         UserDto userDto1 = fakeUserDto();
         UserDto userDto2 = fakeUserDto();
 
-        Mockito.when(findAllUsersUseCase.fetchAllPersisted()).thenReturn(List.of(user1, user2));
+        Mockito.when(findAllUsersUseCase.fetchAllPersisted()).thenReturn(Arrays.asList(user1, user2));
         Mockito.when(userDtoMapper.toDto(user1)).thenReturn(userDto1);
         Mockito.when(userDtoMapper.toDto(user2)).thenReturn(userDto2);
 
