@@ -1,0 +1,6 @@
+rootProject.name = 'rest-api'
+
+include 'domain'
+include 'infrastructure'
+include 'application'
+
