@@ -1,4 +1,4 @@
-package com.example.service.user.infrastructure.bean;
+package com.example.service.user.bean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

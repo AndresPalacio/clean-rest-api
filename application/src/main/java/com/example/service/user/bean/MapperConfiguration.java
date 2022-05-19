@@ -1,4 +1,4 @@
-package com.example.service.user.infrastructure.bean;
+package com.example.service.user.bean;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;

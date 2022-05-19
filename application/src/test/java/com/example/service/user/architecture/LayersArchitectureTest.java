@@ -1,13 +1,12 @@
 package com.example.service.user.architecture;
 
 import com.example.service.user.UserSpringBootApplication;
-import com.example.service.user.infrastructure.annotations.Adapter;
-import com.example.service.user.infrastructure.annotations.Mapper;
+import com.example.service.user.annotations.Adapter;
+import com.example.service.user.annotations.Mapper;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RestController;

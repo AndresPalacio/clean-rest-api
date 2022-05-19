@@ -1,4 +1,4 @@
-package com.example.service.user.domain;
+package com.example.service.user.domain.model;
 
 import java.util.Objects;
 import java.util.function.Function;

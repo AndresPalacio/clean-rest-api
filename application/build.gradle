@@ -4,26 +4,22 @@ plugins {
 
 group 'com.example.service.user'
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    implementation group: 'com.google.code.gson', name: 'gson', version: "2.8.5"
+
+    implementation group: 'mysql', name: 'mysql-connector-java', version: "8.0.12"
 
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    implementation project(':domain')
-    implementation project(':infrastructure')
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.assertj:assertj-core:3.18.0'
     testImplementation 'com.tngtech.archunit:archunit-junit5:0.14.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+
+    implementation project(":domain")
+    implementation project(":infrastructure")
 }
