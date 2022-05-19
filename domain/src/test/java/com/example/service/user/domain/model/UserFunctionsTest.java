@@ -1,5 +1,6 @@
 package com.example.service.user.domain;
 
+import com.example.service.user.domain.model.*;
 import com.example.service.user.utils.DataFaker;
 import org.junit.jupiter.api.Test;
 
